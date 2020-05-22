@@ -115,9 +115,9 @@ resource "alicloud_ess_schedule" "schedule-scale-out" {
 
 resource "alicloud_ess_schedule" "schedule-scale-in" {
   scheduled_action    = "${alicloud_ess_scaling_rule.rule-scale-in.ari}"
-  launch_time         = "2018-07-01T14:00Z"
+  launch_time         = "2020-07-01T14:00Z"
   scheduled_task_name = "terraform-schedule-scale-in"
   recurrence_type     = "Daily"
   recurrence_value    = 1
-  recurrence_end_time = "2018-08-01T12:00Z"
+  recurrence_end_time = "2020-08-01T12:00Z"
 }
